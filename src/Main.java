@@ -16,9 +16,8 @@ public class Main {
         System.out.println("Do an arithmetic Calculation: like Addition, multiplication, division or Subtraction: ");
         System.out.println("Enter your input without spaces to get your result follow precedence rule:  ");
         while(k==1) {
-
-
-            String input= sc.nextLine();
+            System.out.println("Write an Expression ");
+           String input= sc.next();
 
             System.out.println(input);
 
@@ -31,10 +30,16 @@ public class Main {
             System.out.format("%.2f", result);
             System.out.println();
 
+            System.out.println("Do you want to Exit ?: Enter 0 ");
+            int c = sc.nextInt();
+           if(c==0)
+               break;
 
 
+            else k=1;
 
         }
+        System.out.println("Thank you!!!");
 
     }
 
